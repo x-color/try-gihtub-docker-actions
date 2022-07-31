@@ -16,3 +16,5 @@ jobs:
         run: echo "The time was ${{ steps.hello.outputs.time }}"
       - name: job summary
         run: echo "### Hello world! :rocket:" >> $GITHUB_STEP_SUMMARY
+      - name: job summary env
+        run: echo $GITHUB_STEP_SUMMARY
